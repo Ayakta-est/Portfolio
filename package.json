@@ -9,8 +9,20 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.7",
     "@tailwindcss/vite": "^4.0.17",
-    "tailwindcss": "^4.0.17",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7",
     "vite": "^6.2.3"
-  }
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "description": "This is a simple boilerplate project for getting started with a web development project using Vanilla JavaScript and Tailwind CSS, powered by Vite.",
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
