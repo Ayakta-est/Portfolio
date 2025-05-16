@@ -17,8 +17,10 @@
     "vite": "^6.2.3"
   },
   "dependencies": {
+    "lucide-react": "^0.511.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0"
   },
   "description": "This is a simple boilerplate project for getting started with a web development project using Vanilla JavaScript and Tailwind CSS, powered by Vite.",
   "main": "vite.config.js",
