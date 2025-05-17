@@ -1,40 +1,39 @@
 import React from "react";
 import Sidebar from "./components/Sidebar";
+import { AboutMe } from "./sections/AboutMe";
+import { Projects } from "./sections/Projects";
+import { Skills } from "./sections/Skills";
+import { Contact } from "./sections/Contact";
 
 export default function App() {
   return (
-    <div className="flex h-screen">
+    <div className="h-screen relative">
       <Sidebar />
 
-      <main className="flex-1 ml-0 md:ml-64 w-full h-screen 
-        overflow-y-scroll snap-y snap-mandatory scroll-smooth"
-      >
+      <main className="h-screen w-full md:w-[calc(100%-16rem)] overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <section
           id="sobre-mi"
-          className="snap-start min-h-screen flex items-center justify-center bg-gray-100 p-8"
+          className="snap-start w-full min-h-screen flex items-center justify-center bg-purple-800 p-8"
         >
-          <h1 className="text-4xl font-bold">Sobre mí</h1>
+          <AboutMe />
         </section>
 
-        <section
-          id="proyectos"
-          className="snap-start min-h-screen flex items-center justify-center bg-white p-8"
-        >
-          <h1 className="text-4xl font-bold">Proyectos</h1>
+        <section id="proyectos" className="snap-start w-full min-h-screen flex items-center justify-center bg-gray-100 p-8">
+          <Projects />
         </section>
 
         <section
           id="skills"
           className="snap-start min-h-screen flex items-center justify-center bg-gray-100 p-8"
         >
-          <h1 className="text-4xl font-bold">Skills</h1>
+          <Skills />
         </section>
 
         <section
           id="contacto"
           className="snap-start min-h-screen flex items-center justify-center bg-white p-8"
         >
-          <h1 className="text-4xl font-bold">Contacto</h1>
+           <Contact />
         </section>
       </main>
     </div>
