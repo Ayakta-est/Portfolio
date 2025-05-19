@@ -22,7 +22,7 @@ export default function Sidebar() {
 
       <aside
         className={`
-          fixed top-0 left-0 h-screen w-64 bg-cyan-800 text-white px-4 py-6 z-40
+          fixed top-0 left-0 h-screen w-64 bg-slate-900 text-white px-4 py-6 z-40
           transform transition-transform duration-300
           ${isOpen ? "translate-x-0" : "-translate-x-full"} 
           md:translate-x-0 md:block

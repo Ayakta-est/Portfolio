@@ -13,7 +13,7 @@ export default function App() {
       <main className="h-screen w-full md:w-[calc(100%-16rem)] overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <section
           id="sobre-mi"
-          className="snap-start w-full min-h-screen flex items-center justify-center bg-purple-800 p-8"
+          className="snap-start w-full min-h-screen flex items-center justify-center bg-emerald-900 p-8"
         >
           <AboutMe />
         </section>

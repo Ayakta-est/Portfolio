@@ -9,7 +9,7 @@ export const Skills = () => {
     "JavaScript",
     "Python",
     "Git & GitHub",
-    "Docker",
+    "TypeScript",
   ];
 
   return (
@@ -20,7 +20,7 @@ export const Skills = () => {
         {skills.map((skill) => (
           <li
             key={skill}
-            className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full shadow-sm hover:bg-blue-200 transition"
+            className="bg-gray-600 text-white px-4 py-2 rounded-full shadow-sm hover:bg-green-700 transition"
           >
             {skill}
           </li>
