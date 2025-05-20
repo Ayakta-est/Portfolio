@@ -60,13 +60,14 @@ const iconMap = {
 
 export const Projects = () => {
   return (
-    <div className="text-center px-4 py-10 bg-black min-h-screen w-full">
-      <h1 className="text-4xl font-bold mb-10 text-white">Proyectos</h1>
+    <div className="text-center px-4 py-10 min-h-screen w-full">
+      <h1 className="text-4xl font-bold mb-10 text-orange-200">Proyectos</h1>
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-gray-900 border-2 border-green-400 rounded-2xl overflow-hidden transition-transform shadow-lg shadow-green-500/50 flex flex-col"
+            className="border-2 border-cyan-950 rounded-2xl overflow-hidden transition-transform shadow-lg flex flex-col"
+            style={{ backgroundColor: '#02485a' }}
           >
             <a href={project.url} target="_blank" rel="noopener noreferrer">
               <img

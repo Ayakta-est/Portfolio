@@ -7,8 +7,8 @@ export default function Sidebar() {
   const active = useActiveSection();
 
   const linkClass = (id) =>
-    `hover:text-blue-400 ${
-      active === id ? "text-blue-400 font-semibold" : "text-gray-300"
+    `hover:text-red-400 ${
+      active === id ? "text-red-500 font-semibold" : "text-orange-200"
     }`;
 
   return (
@@ -20,16 +20,16 @@ export default function Sidebar() {
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
-      <aside
+      <aside style={{ backgroundColor: '#380f17' }}
         className={`
-          fixed top-0 left-0 h-screen w-64 bg-slate-900 text-white px-4 py-6 z-40
+          fixed top-0 left-0 h-screen w-64 text-white px-4 py-6 z-40
           transform transition-transform duration-300
           ${isOpen ? "translate-x-0" : "-translate-x-full"} 
-          lg:translate-x-0 lg:static lg:block 
+          lg:translate-x-0 lg:block 
         `}
       >  {/*checkear lg:static */}
     
-        <h2 className="text-2xl font-bold mb-8">Mi Portfolio</h2>
+        <h2 className="text-2xl font-bold mb-8 text-orange-200">Mi Portfolio</h2>
         <nav>
           <ul className="space-y-4">
             {[
