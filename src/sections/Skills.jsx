@@ -2,6 +2,9 @@ import React from "react";
 
 export const Skills = () => {
   const skills = [
+    "HTML",
+    "CSS",
+    "Node.js",
     "React",
     "Flask",
     "SQLAlchemy",
@@ -10,10 +13,12 @@ export const Skills = () => {
     "Python",
     "Git & GitHub",
     "TypeScript",
+    "Bootstrap",
+    
   ];
 
   return (
-    <div className="text-center">
+    <div className="text-center w-full">
       <h1 className="text-4xl font-bold mb-6">Skills</h1>
       <p className="mb-4 text-gray-700">Tecnologías y herramientas con las que trabajo:</p>
       <ul className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto">

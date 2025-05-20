@@ -7,10 +7,11 @@ import { Contact } from "./sections/Contact";
 
 export default function App() {
   return (
-    <div className="h-screen relative">
+    <div className="h-screen relative lg:flex">
+
       <Sidebar />
 
-      <main className="h-screen w-full md:w-[calc(100%-16rem)] overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+      <main className="h-screen flex-grow overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <section
           id="sobre-mi"
           className="snap-start w-full min-h-screen flex items-center justify-center bg-emerald-900 p-8"

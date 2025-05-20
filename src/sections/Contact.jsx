@@ -42,7 +42,7 @@ export const Contact = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4 py-16">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4 py-16 w-full">
       <h1 className="text-4xl font-extrabold mb-4 text-gray-900">Contacto</h1>
       <p className="mb-8 text-gray-600 max-w-md text-center">
         Puedes copiar mi correo o visitar mis perfiles:

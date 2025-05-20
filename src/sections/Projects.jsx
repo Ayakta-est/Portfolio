@@ -9,6 +9,7 @@ import {
   SiPostgresql,
   SiSqlite,
 } from 'react-icons/si';
+import { BsBootstrap } from 'react-icons/bs';
 
 const projects = [
   {
@@ -22,7 +23,7 @@ const projects = [
     title: "Qué,Cómo y Cuándo",
     image: "https://i.pinimg.com/736x/8c/62/28/8c6228f748cd6c3e878d3ea1d42bbb73.jpg",
     url: "https://tuproyecto.com/meal-planner",
-    technologies: ["React", "Tailwind", "Python"],
+    technologies: ["React", "Bootstrap", "Python"],
     description: "App que busca resolver todas las cuestiones que nos puede dar al pensar sobre nuestra alimentación. Qué comer, cómo prepararlo y cuántas cantidades debería comer según mi objetivo",
   },
   {
@@ -50,11 +51,13 @@ const iconMap = {
   Flask: <SiFlask title="Flask" size={20} className="text-gray-400" />,
   PostgreSQL: <SiPostgresql title="PostgreSQL" size={20} className="text-blue-700" />,
   SQLite: <SiSqlite title="SQLite" size={20} className="text-blue-300" />,
+  Bootstrap: <BsBootstrap title="Bootstrap" size={20} className="text-purple-300" />,
+
 };
 
 export const Projects = () => {
   return (
-    <div className="text-center px-4 py-10 bg-black min-h-screen">
+    <div className="text-center px-4 py-10 bg-black min-h-screen w-full">
       <h1 className="text-4xl font-bold mb-10 text-white">Proyectos</h1>
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
         {projects.map((project, index) => (
