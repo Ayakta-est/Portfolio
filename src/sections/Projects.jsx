@@ -8,6 +8,7 @@ import {
   SiFlask,
   SiPostgresql,
   SiSqlite,
+  SiTypescript
 } from 'react-icons/si';
 import { BsBootstrap } from 'react-icons/bs';
 
@@ -16,29 +17,30 @@ const projects = [
     title: "Games of the Past",
     image: "https://i.pinimg.com/736x/8c/62/28/8c6228f748cd6c3e878d3ea1d42bbb73.jpg",
     url: "https://tuproyecto.com/videogame-store",
-    technologies: ["React", "Flask", "PostgreSQL"],
+    technologies: ["React", "Flask", "PostgreSQL","TypeScript"],
     description: "Plataforma para jugar juegos retro como Pacman, Buscaminas y Tetris",
   },
   {
-    title: "Qué,Cómo y Cuándo",
+    title: "Qué, Cómo y Cuándo",
     image: "https://i.pinimg.com/736x/8c/62/28/8c6228f748cd6c3e878d3ea1d42bbb73.jpg",
     url: "https://tuproyecto.com/meal-planner",
     technologies: ["React", "Bootstrap", "Python"],
     description: "App que busca resolver todas las cuestiones que nos puede dar al pensar sobre nuestra alimentación. Qué comer, cómo prepararlo y cuántas cantidades debería comer según mi objetivo",
   },
   {
-    title: "Portfolio 3D",
+    title: "Multi Quiz",
     image: "https://i.pinimg.com/736x/8c/62/28/8c6228f748cd6c3e878d3ea1d42bbb73.jpg",
     url: "https://tuproyecto.com/3d-portfolio",
-    technologies: ["Tailwind", "React", "GSAP"],
-    description: "Portfolio interactivo con diseño 3D animado",
+    technologies: ["Tailwind", "React", "Python"],
+    description: "Una app que incluye diferentes temas para que el usuario tenga preguntas originales a la hora de jugar al trivial en juego de mesa.",
   },
+      
   {
-    title: "Gestor de entrenamientos",
+    title: "Tell me a question",
     image: "https://i.pinimg.com/736x/8c/62/28/8c6228f748cd6c3e878d3ea1d42bbb73.jpg",
     url: "https://tuproyecto.com/workout-manager",
-    technologies: ["React", "Flask", "SQLite"],
-    description: "Aplicación para seguir rutinas de entrenamiento personalizadas",
+    technologies: ["React", "Flask", "SQLAlchemy"],
+    description: "Una app en la que puedes preguntar acerca de cuestiones simples y una IA te contestara acorde a tu pregunta",
   },
 ];
 
@@ -52,6 +54,7 @@ const iconMap = {
   PostgreSQL: <SiPostgresql title="PostgreSQL" size={20} className="text-blue-700" />,
   SQLite: <SiSqlite title="SQLite" size={20} className="text-blue-300" />,
   Bootstrap: <BsBootstrap title="Bootstrap" size={20} className="text-purple-300" />,
+  TypeScript: <SiTypescript title="TypeScript" size={20} className="text-blue-400" />,
 
 };
 
@@ -63,7 +66,7 @@ export const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-gray-900 border-2 border-green-400 rounded-2xl overflow-hidden transition-transform hover:scale-105 shadow-lg shadow-green-500/50 flex flex-col"
+            className="bg-gray-900 border-2 border-green-400 rounded-2xl overflow-hidden transition-transform shadow-lg shadow-green-500/50 flex flex-col"
           >
             <a href={project.url} target="_blank" rel="noopener noreferrer">
               <img
