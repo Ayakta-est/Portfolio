@@ -42,8 +42,10 @@ export const Contact = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-16 w-full">
-      <h1 className="text-4xl font-extrabold mb-4">Contacto</h1>
+    <div className="text-center w-full px-4">
+      <h1 className="text-4xl font-bold mb-10 from-orange-300 text-yellow-200 bg-clip-text drop-shadow-md">
+          Contacto
+      </h1>
       <p className="mb-8 max-w-md text-center"
       style={{ color: '#cfac91' }}>
         Puedes copiar mi correo o visitar mis perfiles:

@@ -7,11 +7,11 @@ import { Contact } from "./sections/Contact";
 
 export default function App() {
   return (
-    <div className="h-screen relative lg:flex" style={{ backgroundColor: '#87143b' }}>
+    <div className="h-screen relative lg:flex bg-gradient-to-r from-rose-600 to-[#87143b] ">
 
       <Sidebar />
 
-      <main className="h-screen flex-grow overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+      <main className="h-screen flex-grow overflow-y-scroll snap-y snap-mandatory scroll-smooth lg:ml-64">
         <section
                 id="sobre-mi"
                 className="snap-start w-full min-h-screen flex items-center justify-center p-8"

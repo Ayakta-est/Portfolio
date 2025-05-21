@@ -4,7 +4,7 @@ export const AboutMe = () => {
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center py-16 px-4">
       {/* Placeholder para foto en esquina superior derecha */}
-      <div className="absolute top-6 right-6 bg-gray-400 vw-15 vh-15 flex items-center justify-center">
+      <div className="absolute top-6 right-6 bg-gray-400 vw-10 vh-10 flex items-center justify-center z-1">
         <img src="https://i.pinimg.com/736x/c1/7a/47/c17a476deb955681c90b474d85f9f32d.jpg" />
       </div>
 

@@ -61,7 +61,8 @@ const iconMap = {
 export const Projects = () => {
   return (
     <div className="text-center px-4 py-10 min-h-screen w-full">
-      <h1 className="text-4xl font-bold mb-10 text-orange-200">Proyectos</h1>
+      <h1 className="text-4xl font-bold mb-10 bg-gradient-to-r from-orange-300 via-yellow-200 to-pink-300 
+      bg-clip-text text-transparent drop-shadow-md">Proyectos</h1>
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
         {projects.map((project, index) => (
           <div
@@ -78,7 +79,7 @@ export const Projects = () => {
             </a>
             <div className="p-6 flex-1 flex flex-col justify-between">
               <div>
-                <h2 className="text-2xl font-semibold mb-2 text-white">{project.title}</h2>
+                <h2 className="text-2xl font-semibold mb-2 text-orange-200">{project.title}</h2>
                 <p className="text-gray-300 mb-4">{project.description}</p>
               </div>
               <div className="flex flex-wrap justify-center gap-4 mb-4">
@@ -94,7 +95,8 @@ export const Projects = () => {
               </div>
               <a
                 href={project.url}
-                className="mt-auto inline-block bg-green-700 hover:bg-green-900 text-white font-semibold py-2 px-6 rounded-full transition"
+                className="mt-auto inline-block hover:bg-rose-900 text-red-500 font-semibold py-2 px-6 rounded-full transition"
+                style={{ backgroundColor: '#380f17' }}
               >
                 Ver proyecto
               </a>

@@ -54,7 +54,10 @@ export const Skills = () => {
 
   return (
     <div className="text-center w-full px-4">
-      <h1 className="text-4xl font-bold mb-6">Skills</h1>
+      <h1 className="text-4xl font-bold mb-10 bg-gradient-to-r from-orange-300 via-yellow-200 
+      to-pink-300 bg-clip-text text-transparent drop-shadow-md">
+        Skills
+      </h1>
       <p className="mb-6 text-[#cfac91]">
         Tecnologías y herramientas con las que trabajo:
       </p>
